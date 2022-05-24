@@ -1,0 +1,165 @@
+:root {
+  --primary: blue;
+  --secondary: purple;
+  --primarybackground: darkblue;
+  --wrong: red;
+  --correct: green;
+}
+
+body {
+  color: black;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Clickable*/
+#scores-page {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--primarybackground);
+}
+
+button,
+.back-button {
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 5px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.back-button:hover,
+.back-button:focus,
+.back-button:active,
+button:hover,
+button:focus,
+button:active {
+  background-color: var(--primarybackground);
+  color: white;
+}
+
+.back-button {
+  margin-left: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/*Nav*/
+nav {
+  padding: 15px;
+}
+
+/*Sections*/
+main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+/*Start*/
+#start {
+  text-align: center;
+}
+
+#timer {
+  float: right;
+}
+
+#time-remaining {
+  color: var(--secondary);
+}
+
+#choices {
+  list-style: none;
+  padding-left: 0;
+}
+
+.choice-status {
+  font-size: 2px;
+  font-weight: bold;
+}
+
+#correct {
+  color: var(--correct);
+  text-align: center;
+  font-size: 30px;
+}
+
+#wrong {
+  color: var(--wrong);
+  text-align: center;
+  font-size: 30px;
+}
+
+/*End score*/
+#score-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#score {
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+/*Form*/
+#submit-score {
+  margin-bottom: 10px;
+}
+
+#initials {
+  padding: 3px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.error {
+  border: 2px solid --wrong;
+}
+
+#error-message {
+  color: var(--wrong);
+  margin-top: 5px;
+}
+
+/*Highscores*/
+table {
+  border-spacing: 10px;
+}
+th {
+  border-bottom: 1px solid black;
+}
+
+td {
+  text-align: center;
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+
+th:last-child,
+td:last-child {
+  text-align: right;
+}
